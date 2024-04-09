@@ -96,3 +96,10 @@ Validar menu adicionar cartao
     Dado que eu esteja na home do app
     Quando eu selecionar o menu adicionar cartao
     Entao o menu adicionar cartao deve ser exibido
+
+Validar menu footer
+    [Tags]    footer
+    Dado que eu esteja na home do app
+    Quando eu scrolar ate o menu footer
+    Entao as informacoes do menu footer devem ser exibidas
+    
