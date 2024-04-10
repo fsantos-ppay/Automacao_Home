@@ -2,28 +2,34 @@
 Documentation    Pagina para a documentação dos elementos da tela de Home
 Library    AppiumLibrary
 *** Variables ***
-${BtnHome}        	    xpath=//XCUIElementTypeImage[@name="apl3_ic_home"]/XCUIElementTypeOther
-${BtnCarteira}          xpath=//XCUIElementTypeButton[@name="Carteira"]
-${Card360}              xpath=//XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther
-${BtnCofrinho}          xpath=//XCUIElementTypeButton[@value="Cofrinhos"]
-${BtnEmprestimos}       xpath=//XCUIElementTypeButton[@value="Empréstimo"]
-${BtnInvestir}          xpath=//XCUIElementTypeButton[@value="Investir"]
-${BtnSeguros}           xpath=//XCUIElementTypeButton[@value="Seguros"]
-${BtnPixTag}            xpath=//XCUIElementTypeButton[@value="Pix, EM ATÉ 12X"]
-${BtnPagarBoleto}       xpath=//XCUIElementTypeButton[@value="Pagar boleto"]
-${BtnPagarPessoas}      xpath=//XCUIElementTypeButton[@value="Pagar pessoas"]
-${BtnQRCode}            xpath=//XCUIElementTypeButton[@value="QR Code"]
-${BtnRecargaCelular}    xpath=//XCUIElementTypeButton[@value="Recarga de Celular"]
-${BtnPagarFatura}       xpath=//XCUIElementTypeButton[@value="Pagar fatura"]
-${BtnCartaoTransporte}  xpath=//XCUIElementTypeButton[@value="Cartão de Transporte"]
-${BtnGiftCards}         xpath=//XCUIElementTypeButton[@value="Comprar Gift Cards"]
-${BtnAdicionarCartao}   xpath=//XCUIElementTypeButton[@value="Adicionar Cartão"]
-${BtnMonitorarCPF}      xpath=//XCUIElementTypeButton[@value="Monitorar CPF"]
-${BtnCofrinhos}         xpath=//XCUIElementTypeButton[@value="Cofrinhos"]
-
-${HeaderProDiaDia}      xpath=//XCUIElementTypeOther[@value="Pro dia a dia"]
-${CardEmprestimo}       xpath=//XCUIElementTypeOther[@value="Empréstimo, Você tem uma parcela em atraso. Evite a negativação, , "]
-
+${BtnHome}        	           xpath=//XCUIElementTypeImage[@name="apl3_ic_home"]/XCUIElementTypeOther
+${BtnCarteira}                 xpath=//XCUIElementTypeButton[@name="Carteira"]
+${Card360}                     xpath=//XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther
+${BtnCofrinho}                 xpath=//XCUIElementTypeButton[@value="Cofrinhos"]
+${BtnEmprestimos}              xpath=//XCUIElementTypeButton[@value="Empréstimo"]
+${BtnInvestir}                 xpath=//XCUIElementTypeButton[@value="Investir"]
+${BtnSeguros}                  xpath=//XCUIElementTypeButton[@value="Seguros"]
+${BtnPixTag}                   xpath=//XCUIElementTypeButton[@value="Pix, EM ATÉ 12X"]
+${BtnPagarBoleto}              xpath=//XCUIElementTypeButton[@value="Pagar boleto"]
+${BtnPagarPessoas}             xpath=//XCUIElementTypeButton[@value="Pagar pessoas"]
+${BtnQRCode}                   xpath=//XCUIElementTypeButton[@value="QR Code"]
+${BtnRecargaCelular}           xpath=//XCUIElementTypeButton[@value="Recarga de Celular"]
+${BtnPagarFatura}              xpath=//XCUIElementTypeButton[@value="Pagar fatura"]
+${BtnCartaoTransporte}         xpath=//XCUIElementTypeButton[@value="Cartão de Transporte"]
+${BtnGiftCards}                xpath=//XCUIElementTypeButton[@value="Comprar Gift Cards"]
+${BtnAdicionarCartao}          xpath=//XCUIElementTypeButton[@value="Adicionar Cartão"]
+${BtnMonitorarCPF}             xpath=//XCUIElementTypeButton[@value="Monitorar CPF"]
+${BtnCofrinhos}                xpath=//XCUIElementTypeButton[@value="Cofrinhos"]
+${HeaderProDiaDia}             xpath=//XCUIElementTypeOther[@value="Pro dia a dia"]
+${CardEmprestimo}              xpath=//XCUIElementTypeOther[@value="Empréstimo, Você tem uma parcela em atraso. Evite a negativação, , "]
+${BtnCarteiraFooter}           xpath=//XCUIElementTypeButton[@value="Carteira"] 
+${BtnCartãoFoorter}            xpath=//XCUIElementTypeButton[@value="Cartão"]
+${BtnPagamentosETransacoes}    xpath=//XCUIElementTypeButton[@value="Pagamentos e transações"]
+${BtnInvestimentos}            xpath=//XCUIElementTypeButton[@value="Investimentos"]
+${BtnComprasEVantantagens}     xpath=//XCUIElementTypeButton[@value="Investimentos"]
+${BtnSegurosFooter}            xpath=//XCUIElementTypeButton[@value="Seguros"]
+${BtnEmpréstimosFooter}        xpath=//XCUIElementTypeButton[@value="Empréstimos, PRÉ-APROVADO"]
+${BtnAjuda}                    xpath=//XCUIElementTypeButton[@value="Ajuda"]
 
 *** Keywords ***
 Entao as informacoes da home devem ser exibidas
@@ -47,6 +53,14 @@ Entao devem ser exibidas as informacoes da conta do usuario
 
 Quando eu scrolar ate os item pro dia a dia 
     Scroll down          ${HeaderProDiaDia}
+
+Quando eu scrolar ate o menu footer
+    Scroll Down    ${BtnCartãoFoorter}
+
+Entao as informacoes do menu footer devem ser exibidas
+    Page Should Contain Element    ${BtnCarteiraFooter}
+    Page Should Contain Element    ${BtnSegurosFooter}
+
 
 Entao os itens devem ser exibidos em lista
     Page Should Contain Element        ${BtnCofrinho}
