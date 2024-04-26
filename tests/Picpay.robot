@@ -34,7 +34,7 @@ Exibição dos itens
      Entao deve possuir um item com tag
 
 Exibição dos itens no carrossel
-   
+    [Tags]    360
     Dado que eu esteja na home do app
     E o carrossel esteja sendo exibido
     Entao o carossel deve conter 10 elementos
@@ -76,12 +76,13 @@ Validar menu cofrinho
     Entao o menu cofrinhos deve ser exibido
 
 Validar menu pagar fatura
-    
+    [Tags]    360
     Dado que eu esteja na home do app
     Quando eu selecionar o menu pagar faturas
     Entao o menu de fatura deve ser exibido
 
 Validar menu cartao de transporte
+     [Tags]    dia_a_dia
     Dado que eu esteja na home do app
     Quando eu selecionar o menu Cartao de transporte
 

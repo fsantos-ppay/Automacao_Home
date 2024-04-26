@@ -55,12 +55,15 @@ Quando eu scrolar ate os item pro dia a dia
     Scroll down          ${HeaderProDiaDia}
 
 Quando eu scrolar ate o menu footer
+    Scroll Down    ${HeaderProDiaDia} 
     Scroll Down    ${BtnCartãoFoorter}
 
 Entao as informacoes do menu footer devem ser exibidas
     Page Should Contain Element    ${BtnCarteiraFooter}
     Page Should Contain Element    ${BtnSegurosFooter}
-
+    Page Should Contain Element    ${BtnEmpréstimosFooter}
+    Page Should Contain Element    ${BtnCartãoFoorter}
+    
 
 Entao os itens devem ser exibidos em lista
     Page Should Contain Element        ${BtnCofrinho}
