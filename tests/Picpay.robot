@@ -1,17 +1,17 @@
 *** Settings ***
 Documentation    classe criada para a realização dos testes
-Resource        /Volumes/HD - Mac/Automação Home/resources/base.resource
-Resource        /Volumes/HD - Mac/Automação Home/screens/HomePO.robot
-Resource        /Volumes/HD - Mac/Automação Home/screens/CarteiraPO.robot
-Resource        /Volumes/HD - Mac/Automação Home/screens/AreaPixPO.robot
-Resource        /Volumes/HD - Mac/Automação Home/screens/PagarBoletosPO.robot
-Resource        /Volumes/HD - Mac/Automação Home/screens/PagarPessoasPO.robot
-Resource        /Volumes/HD - Mac/Automação Home/screens/QRCodePO.robot
-Resource        /Volumes/HD - Mac/Automação Home/screens/RecargaCelularPO.robot
-Resource        /Volumes/HD - Mac/Automação Home/screens/PagarFaturaPO.robot
-Resource        /Volumes/HD - Mac/Automação Home/screens/GiftCardPO.robot
-Resource        /Volumes/HD - Mac/Automação Home/screens/AdicionarCartaoPO.robot
-Resource        /Volumes/HD - Mac/Automação Home/screens/CofrinhosPO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/resources/base.resource
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/HomePO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/CarteiraPO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/AreaPixPO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/PagarBoletosPO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/PagarPessoasPO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/QRCodePO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/RecargaCelularPO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/PagarFaturaPO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/GiftCardPO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/AdicionarCartaoPO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/CofrinhosPO.robot
 
 
 
