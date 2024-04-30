@@ -12,6 +12,9 @@ Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/PagarFaturaPO
 Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/GiftCardPO.robot
 Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/AdicionarCartaoPO.robot
 Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/CofrinhosPO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/GavetaoPO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/CobrarAlguemPO.robot
+
 
 
 
@@ -103,4 +106,38 @@ Validar menu footer
     Dado que eu esteja na home do app
     Quando eu scrolar ate o menu footer
     Entao as informacoes do menu footer devem ser exibidas
+
+Acessar Pix pelo gavetao
+    [Tags]    gavetao
+    Dado que eu esteja na home do app
+    Quando eu acessar o menu gavetao
+    E selecionar menu Pix
+    Entao o menu pix deve ser exibido
+
+Acessar menu pagar Boletos pelo gavetao
+    [Tags]    gavetao
+    Dado que eu esteja na home do app
+    Quando eu acessar o menu gavetao
+    E selecionar o menu Pagar Boletos
+    Entao o menu pagar boletos deve ser exibido
+
+Acessar o menu pagar com QR Code pelo gavetao
+    [Tags]    gavetao
+    Dado que eu esteja na home do app
+    Quando eu acessar o menu gavetao
+    E selecionar o menu Pagar com QR Code
+    Entao o menu QR code deve ser exibido
     
+Acessar o menu pagar pessoas pelo gavetao
+    [Tags]    gavetao
+    Dado que eu esteja na home do app
+    Quando eu acessar o menu gavetao
+    E selecionar o menu Pagar Pessoas
+    Entao o menu pagar pessoas gavetao deve ser exibido
+
+Acessar o menu cobrar alguem pelo gavetao
+    [Tags]    gavetao
+    Dado que eu esteja na home do app
+    Quando eu acessar o menu gavetao
+    E selecionar o menu Cobrar Alguém
+    Entao o menu Cobrar alguem deve ser exibido

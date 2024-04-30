@@ -30,6 +30,7 @@ ${BtnComprasEVantantagens}     xpath=//XCUIElementTypeButton[@value="Investiment
 ${BtnSegurosFooter}            xpath=//XCUIElementTypeButton[@value="Seguros"]
 ${BtnEmpréstimosFooter}        xpath=//XCUIElementTypeButton[@value="Empréstimos, PRÉ-APROVADO"]
 ${BtnAjuda}                    xpath=//XCUIElementTypeButton[@value="Ajuda"]
+${BtnMenuGavetao}              xpath=//XCUIElementTypeButton[@name="Menu"]
 
 *** Keywords ***
 Entao as informacoes da home devem ser exibidas
@@ -117,3 +118,6 @@ Quando eu selecionar o menu monitorar CPF
 
 Quando eu selecionar o menu cofrinhos
     Click Element    ${BtnCofrinho}
+
+Quando eu acessar o menu gavetao
+    Click Element    ${BtnMenuGavetao}
