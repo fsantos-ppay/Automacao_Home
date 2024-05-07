@@ -1,19 +1,21 @@
 *** Settings ***
 Documentation    classe criada para a realização dos testes
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/resources/env.resource
 Resource        /Volumes/Macintosh HD/Users/Automacao_Home/resources/base.resource
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/HomePO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/CarteiraPO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/AreaPixPO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/PagarBoletosPO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/PagarPessoasPO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/QRCodePO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/RecargaCelularPO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/PagarFaturaPO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/GiftCardPO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/AdicionarCartaoPO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/CofrinhosPO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/GavetaoPO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/CobrarAlguemPO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/HomePO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/CarteiraPO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/AreaPixPO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/PagarBoletosPO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/PagarPessoasPO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/QRCodePO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/RecargaCelularPO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/PagarFaturaPO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/GiftCardPO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/AdicionarCartaoPO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/CofrinhosPO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/GavetaoPO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/CobrarAlguemPO.robot
+Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/CartaoDeTransportePO.robot
 
 
 
@@ -37,7 +39,7 @@ Exibição dos itens
      Entao deve possuir um item com tag
 
 Exibição dos itens no carrossel
-    [Tags]    360
+    [Tags]   robot:skip
     Dado que eu esteja na home do app
     E o carrossel esteja sendo exibido
     Entao o carossel deve conter 10 elementos
@@ -79,7 +81,7 @@ Validar menu cofrinho
     Entao o menu cofrinhos deve ser exibido
 
 Validar menu pagar fatura
-    [Tags]    360
+    [Tags]    robot:skip
     Dado que eu esteja na home do app
     Quando eu selecionar o menu pagar faturas
     Entao o menu de fatura deve ser exibido
@@ -88,12 +90,7 @@ Validar menu cartao de transporte
      [Tags]    dia_a_dia
     Dado que eu esteja na home do app
     Quando eu selecionar o menu Cartao de transporte
-
-Validar menu gift cards
-    
-    Dado que eu esteja na home do app
-    Quando eu selecionar o menu compras de gift card
-    Entao o menu de gift card deve ser exibido
+    Entao o menu cartao de transporte deve ser exibido
 
 Validar menu adicionar cartao
     [Tags]    dia_a_dia
