@@ -28,7 +28,7 @@ jobs:
 
       - name: Run Robot Framework Tests
         run: |
-          robot -d results tests/
+          robot -d ./results -v PLATAFORM:IOS  tests/picpay.robot
         env:
           LT_USERNAME: ${{ secrets.LT_USERNAME }}
           LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
