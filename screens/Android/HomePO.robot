@@ -2,8 +2,8 @@
 Documentation    Pagina para a documentação dos elementos da tela de Home
 Library    AppiumLibrary
 *** Variables ***
-${BtnHome}        	           xpath=//XCUIElementTypeImage[@name="apl3_ic_home"]/XCUIElementTypeOther
-${BtnCarteira}                 xpath=//XCUIElementTypeButton[@name="Carteira"]
+${BtnHome}        	           xpath=(//android.widget.ImageView[@resource-id="com.picpay:id/"])[17]
+${BtnCarteira}                 xpath=(//android.widget.ImageView[@resource-id="com.picpay:id/"])[19]
 ${Card360}                     xpath=//XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther
 ${BtnCofrinho}                 xpath=//XCUIElementTypeButton[@value="Cofrinhos"]
 ${BtnEmprestimos}              xpath=//XCUIElementTypeButton[@value="Empréstimo"]
@@ -30,7 +30,7 @@ ${BtnSegurosFooter}            xpath=//XCUIElementTypeButton[@value="Seguros"]
 ${BtnEmpréstimosFooter}        xpath=//XCUIElementTypeButton[@value="Empréstimos, PRÉ-APROVADO"]
 ${BtnAjuda}                    xpath=//XCUIElementTypeButton[@value="Ajuda"]
 ${BtnMenuGavetao}              xpath=//XCUIElementTypeButton[@name="Menu"]
-${BtnCartaoDeCredito}          xpath=//XCUIElementTypeButton[@value="PicPay Card"]
+${BtnCartaoDeCredito}          xpath=//XCUIElementTypeButton[@value="Cartão de crédito. ATRASADO"]
 
 *** Keywords ***
 Entao as informacoes da home devem ser exibidas

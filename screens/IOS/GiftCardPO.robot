@@ -8,5 +8,5 @@ Library    AppiumLibrary
 
      
 Entao o menu de gift card deve ser exibido
-    Page Should Contain Text   Gift Card
+    Page Should Contain Text   Gift Cards
 

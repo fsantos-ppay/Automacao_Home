@@ -8,8 +8,5 @@ Library    AppiumLibrary
 
      
 Entao o menu pagar pessoas deve ser exibido
-    Page Should Contain Text    Comece informando quem você quer encontrar
+    Page Should Contain Text    Encontre o que precisa
 
-
-Entao o menu pagar pessoas gavetao deve ser exibido
-    Page Should Contain Text    Encontre o que você precisa

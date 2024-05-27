@@ -13,7 +13,7 @@ Start session
     ...    platformName=IOS
     ...    DeviceName=iPhone
     ...    platformVersion=16.7.7
-    ...    bundleId=com.picpay.PicPay-Development
+    ...    bundleId=com.picpay.PicPay
     ...    udid=4a18fdb2b0e6a3e07adc857f54f1ca6e1b09810e
     ...    autoAcceptAlerts=true
 

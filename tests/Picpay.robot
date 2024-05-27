@@ -92,11 +92,11 @@ Validar menu cartao de transporte
     Quando eu selecionar o menu Cartao de transporte
     Entao o menu cartao de transporte deve ser exibido
 
-Validar menu adicionar cartao
+Validar menu Gift Cards
     [Tags]    dia_a_dia
     Dado que eu esteja na home do app
-    Quando eu selecionar o menu adicionar cartao
-    Entao o menu adicionar cartao deve ser exibido
+    Quando eu selecionar o menu compras de gift card
+    Entao o menu de gift card deve ser exibido
 
 Validar menu footer
     [Tags]    footer
@@ -130,7 +130,7 @@ Acessar o menu pagar pessoas pelo gavetao
     Dado que eu esteja na home do app
     Quando eu acessar o menu gavetao
     E selecionar o menu Pagar Pessoas
-    Entao o menu pagar pessoas gavetao deve ser exibido
+    Entao o menu pagar pessoas deve ser exibido
 
 Acessar o menu cobrar alguem pelo gavetao
     [Tags]    gavetao
