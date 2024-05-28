@@ -31,7 +31,7 @@ jobs:
          pwd
           ls -lah
           find . -name 'picpay.robot'
-          robot -d ./results -v PLATAFORM:IOS  tests/picpay.robot
+          robot -d ./results -v PLATAFORM:IOS  /home/runner/work/Automacao_Home/tests/picpay.robot
         env:
           LT_USERNAME: ${{ secrets.LT_USERNAME }}
           LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
