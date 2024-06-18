@@ -30,12 +30,8 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Robot Framework Tests
-        run: |
-         pwd
-          ls -lah
-          find . -name 'picpay.robot'
-          robot -d ./results -v PLATAFORM:IOS  /home/runner/work/Automacao_Home/tests/picpay.robot
         env:
           LT_USERNAME: ${{ secrets.LT_USERNAME }}
           LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
-          LT_GRID_URL: "https://${{ secrets.LT_USERNAME }}:${{ secrets.LT_ACCESS_KEY }}@mobile-hub.lambdatest.com/wd/hub"
+        run: |
+          robot --variable REMOTE_URL:"http://${{ secrets.LT_USERNAME }}:${{ secrets.LT_ACCESS_KEY }}@hub.lambdatest.com/wd/hub" --variable CAPABILITIES:${{ github.workspace }}/capabilities.json tests/
