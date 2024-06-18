@@ -13,9 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Set safe directory for Git
-        run: git config --global --add safe.directory $GITHUB_WORKSPACE
-
       - name: Checkout repository
         uses: actions/checkout@v2
 
