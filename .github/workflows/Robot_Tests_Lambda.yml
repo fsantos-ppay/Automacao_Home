@@ -31,4 +31,4 @@ jobs:
           LT_USERNAME: ${{ secrets.LT_USERNAME }}
           LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
         run: |
-          robot --variable REMOTE_URL:"http://${{ secrets.LT_USERNAME }}:${{ secrets.LT_ACCESS_KEY }}@hub.lambdatest.com/wd/hub" --variable CAPABILITIES:home/runner/work/Automacao_Home/resources/capabilities.json
+          robot --variable REMOTE_URL:"http://${{ secrets.LT_USERNAME }}:${{ secrets.LT_ACCESS_KEY }}@applive.lambdatest.com/app" --variable CAPABILITIES:home/runner/work/Automacao_Home/resources/capabilities.json
