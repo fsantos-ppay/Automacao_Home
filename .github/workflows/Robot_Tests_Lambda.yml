@@ -28,7 +28,7 @@ jobs:
 
       - name: Run Robot Framework Tests
         env:
-          LT_USERNAME: Fabricio Santos
-          LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
+          LT_USERNAME: Fabricio santos
+          LT_ACCESS_KEY: 92798401Fs
         run: |
-          robot --variable REMOTE_URL:"http://Fabricio Santos:92798401Fs@applive.lambdatest.com/app" --variable CAPABILITIES:home/runner/work/Automacao_Home/resources/capabilities.json
+          robot --variable REMOTE_URL:"http://${{ secrets.LT_USERNAME }}:${{ secrets.LT_ACCESS_KEY }}@applive.lambdatest.com/app" --variable CAPABILITIES:home/runner/work/Automacao_Home/resources/capabilities.json
