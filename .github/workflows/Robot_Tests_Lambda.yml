@@ -31,4 +31,4 @@ jobs:
             LT_USERNAME: ${{ secrets.LT_USERNAME }}
             LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
         run: |
-            robot --variable REMOTE_URL:"http://${{ secrets.LT_USERNAME }}:${{ secrets.LT_ACCESS_KEY }}@hub.lambdatest.com/wd/hub" --variable CAPABILITIES:${{ github.workspace }}/capabilities.json tests/Picpay.robot
+            robot --variable REMOTE_URL:"http://fabricio.santos@invillia.com:92798401Fs@hub.lambdatest.com/wd/hub" --variable CAPABILITIES:${{ github.workspace }}/capabilities.json tests/Picpay.robot
