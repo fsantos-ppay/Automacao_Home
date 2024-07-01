@@ -1,21 +1,21 @@
 *** Settings ***
 Documentation    classe criada para a realização dos testes
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/resources/env.resource
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/resources/base.resource
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/HomePO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/CarteiraPO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/AreaPixPO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/PagarBoletosPO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/PagarPessoasPO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/QRCodePO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/RecargaCelularPO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/PagarFaturaPO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/GiftCardPO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/AdicionarCartaoPO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/CofrinhosPO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/GavetaoPO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/CobrarAlguemPO.robot
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/screens/${PLATFORM}/CartaoDeTransportePO.robot
+Resource        ../resources/env.resource
+Resource        ../resources/base.resource
+Resource        ../screens/${PLATFORM}/HomePO.robot
+Resource        ../screens/${PLATFORM}/CarteiraPO.robot
+Resource        ../screens/${PLATFORM}/AreaPixPO.robot
+Resource        ../screens/${PLATFORM}/PagarBoletosPO.robot
+Resource        ../screens/${PLATFORM}/PagarPessoasPO.robot
+Resource        ../screens/${PLATFORM}/QRCodePO.robot
+Resource        ../screens/${PLATFORM}/RecargaCelularPO.robot
+Resource        ../screens/${PLATFORM}/PagarFaturaPO.robot
+Resource        ../screens/${PLATFORM}/GiftCardPO.robot
+Resource        ../screens/${PLATFORM}/AdicionarCartaoPO.robot
+Resource        ../screens/${PLATFORM}/CofrinhosPO.robot
+Resource        ../screens/${PLATFORM}/GavetaoPO.robot
+Resource        ../screens/${PLATFORM}/CobrarAlguemPO.robot
+Resource        ../screens/${PLATFORM}/CartaoDeTransportePO.robot
 
 
 
