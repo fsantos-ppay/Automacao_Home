@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation    Arquivo de configuração geral da automação
 Library          AppiumLibrary
-Resource        /Volumes/Macintosh HD/Users/Automacao_Home/resources/env.resource
+Resource        ../resources/env.resource
 
 
 *** Keywords ***
