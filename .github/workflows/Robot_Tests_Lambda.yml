@@ -26,8 +26,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-          - name: Run Robot Framework Tests
-          env:
+      - name: Run Robot Framework Tests
+        env:
             LT_USERNAME: ${{ secrets.LT_USERNAME }}
             LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
           run: |
