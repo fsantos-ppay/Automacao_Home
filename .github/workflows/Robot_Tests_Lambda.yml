@@ -28,7 +28,7 @@ jobs:
 
       - name: Run Robot Framework Tests
         env:
-            LT_USERNAME: ${{ secrets.LT_USERNAME }}
-            LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
+            LT_USERNAME: fabricio.santos
+            LT_ACCESS_KEY: qKjyRUVdbDo01XDl3qdK7hdbWHbCFTQNdknvqvbvHhjDLA8Dod
         run: |
             robot --variable REMOTE_URL:"http://fabricio.santos:qKjyRUVdbDo01XDl3qdK7hdbWHbCFTQNdknvqvbvHhjDLA8Dod@hub.lambdatest.com/wd/hub" --variable CAPABILITIES:${{ github.workspace }}/capabilities.json tests/Picpay.robot
