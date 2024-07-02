@@ -5,15 +5,14 @@ Resource        ../resources/env.resource
 
 *** Variables ***
 ${platformName}         ios
-${deviceName}           iPhone.*
+${deviceName}           iPhone 15
 ${visual}               True
 ${network}              True
 ${isRealMobile}         True
 ${devicelog}            True
-${LT_APP_ID}            lt://proverbial-ios
-${LT_GRID_URL}          https://mobile-hub.lambdatest.com/wd/hub
+${LT_APP_ID}            Sample App.ipa
 ${TIMEOUT}              3000
-${version}              15
+${version}              17
 
 *** Keywords ***
 
@@ -30,8 +29,7 @@ Open lambda test app
     ...   name=LT_Appium_Robot_App_iOS
     ...   build=LT_Appium_Robot_App_Automation
     ...   app=${LT_APP_ID}
-    ${REMOTE_URL}=   Set Variable       https://${LT_USERNAME}:${LT_ACCESS_KEY}@${LT_GRID_URL}
-
+    ${REMOTE_URL}=   Set Variable       https://${LT_USERNAME}:${LT_ACCESS_KEY}@hub.lambdatest.com/wd/hub
     Open Application  ${REMOTE_URL}  ${CAPABILITIES}
 
 Start session
