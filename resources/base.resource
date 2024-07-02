@@ -3,8 +3,36 @@ Documentation    Arquivo de configuração geral da automação
 Library          AppiumLibrary
 Resource        ../resources/env.resource
 
+*** Variables ***
+${platformName}         ios
+${deviceName}           iPhone.*
+${visual}               True
+${network}              True
+${isRealMobile}         True
+${devicelog}            True
+${LT_APP_ID}            lt://proverbial-ios
+${LT_GRID_URL}          https://mobile-hub.lambdatest.com/wd/hub
+${TIMEOUT}              3000
+${version}              15
 
 *** Keywords ***
+
+Open lambda test app
+    [Timeout]   ${TIMEOUT}
+    ${CAPABILITIES}=    Create Dictionary
+    ...   platformName=${platformName}
+    ...   platformVersion=${version}
+    ...   deviceName=${deviceName}
+    ...   visual=${visual}
+    ...   network=${network}
+    ...   devicelog=${devicelog}
+    ...   isRealMobile=${isRealMobile}
+    ...   name=LT_Appium_Robot_App_iOS
+    ...   build=LT_Appium_Robot_App_Automation
+    ...   app=${LT_APP_ID}
+    ${REMOTE_URL}=   Set Variable       https://${LT_USERNAME}:${LT_ACCESS_KEY}@${LT_GRID_URL}
+
+    Open Application  ${REMOTE_URL}  ${CAPABILITIES}
 
 Start session
     Run Keyword If      '${PLATFORM}' == 'IOS'  

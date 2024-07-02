@@ -21,7 +21,7 @@ Resource        ../screens/${PLATFORM}/CartaoDeTransportePO.robot
 
 
 
-Test Setup      Start session
+Test Setup      Open lambda test app
 Test Teardown   Finish session
 
 *** Test Cases ***

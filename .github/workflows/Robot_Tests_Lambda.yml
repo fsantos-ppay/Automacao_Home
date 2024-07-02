@@ -24,11 +24,13 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install robotframework robotframework-appiumlibrary
 
       - name: Run Robot Framework Tests
         env:
-            LT_USERNAME: fabricio.santos
-            LT_ACCESS_KEY: qKjyRUVdbDo01XDl3qdK7hdbWHbCFTQNdknvqvbvHhjDLA8Dod
+          LT_USERNAME: ${{ secrets.LT_USERNAME }}
+          LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
         run: |
-            robot --variable REMOTE_URL:"http://fabricio.santos:qKjyRUVdbDo01XDl3qdK7hdbWHbCFTQNdknvqvbvHhjDLA8Dod@hub.lambdatest.com/wd/hub" --variable CAPABILITIES:${{ github.workspace }}/capabilities.json tests/Picpay.robot
+          export LT_USERNAME=${{ secrets.LT_USERNAME }}
+          export LT_ACCESS_KEY=${{ secrets.LT_ACCESS_KEY }}
+          robot --variable LT_USERNAME:${LT_USERNAME} --variable LT_ACCESS_KEY:${LT_ACCESS_KEY} --variable version:15 --variable devicelog:True --variable CURDIR:${{ github.workspace }} tests/Picpay.robot
