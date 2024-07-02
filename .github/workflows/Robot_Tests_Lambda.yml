@@ -28,9 +28,9 @@ jobs:
 
       - name: Run Robot Framework Tests
         env:
-          LT_USERNAME: ${{ secrets.LT_USERNAME }}
-          LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
+          LT_USERNAME: ${LT_USERNAME}
+          LT_ACCESS_KEY: ${LT_ACCESS_KEY}
         run: |
-          export LT_USERNAME=${{ secrets.LT_USERNAME }}
-          export LT_ACCESS_KEY=${{ secrets.LT_ACCESS_KEY }}
+          export LT_USERNAME=${LT_USERNAME}
+          export LT_ACCESS_KEY=${LT_ACCESS_KEY}
           robot --variable LT_USERNAME:${LT_USERNAME} --variable LT_ACCESS_KEY:${LT_ACCESS_KEY} --variable version:15 --variable devicelog:True --variable CURDIR:${{ github.workspace }} tests/Picpay.robot
