@@ -31,6 +31,4 @@ jobs:
           LT_USERNAME: ${LT_USERNAME}
           LT_ACCESS_KEY: ${LT_ACCESS_KEY}
         run: |
-          export LT_USERNAME=${LT_USERNAME}
-          export LT_ACCESS_KEY=${LT_ACCESS_KEY}
-          robot --variable LT_USERNAME:${LT_USERNAME} --variable LT_ACCESS_KEY:${LT_ACCESS_KEY} --variable version:15 --variable devicelog:True --variable CURDIR:${{ github.workspace }} tests/Picpay.robot
+          robot --variable LT_USERNAME:fabricio.santos --variable LT_ACCESS_KEY:qKjyRUVdbDo01XDl3qdK7hdbWHbCFTQNdknvqvbvHhjDLA8Dod --variable version:15 --variable devicelog:True --variable CURDIR:${{ github.workspace }} tests/Picpay.robot
